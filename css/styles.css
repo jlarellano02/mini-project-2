@@ -1,0 +1,17 @@
+@import url('https://fonts.cdnfonts.com/css/konigsberg');
+/* @import url('https://fonts.cdnfonts.com/css/nunito-sans'); */
+
+/* navbar style */
+.navbar-brand {
+    font-family: 'Königsberg', sans-serif;
+                                                
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* logo-icon style */
+.logo-icon {
+    width: 50px;
+}
+                                                
