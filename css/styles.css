@@ -10,6 +10,7 @@
   font-family: "Königsberg", sans-serif;
   font-weight: bold;
   font-size: 30px;
+  color: rgb(176,15,13);
 }
 #navbar {
   display: block;
@@ -47,6 +48,7 @@ body {
 @media only screen and (max-width: 768px) {
   .navbar-brand {
     display: none;
+    
   }
 
   .logo-icon {
@@ -55,3 +57,5 @@ body {
     display: block;
   }
 }
+
+
