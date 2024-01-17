@@ -40,6 +40,7 @@ body {
   filter: brightness(0.6);
 }
 
+<<<<<<< HEAD
 /* Footer */
 #contact {
   background: #6e54fa;
@@ -108,6 +109,11 @@ body {
   color: #fff;
   font-size: 14px;
   letter-spacing: 2px;
+=======
+/* cards style */
+.card-body {
+    height: 330px;
+>>>>>>> 067adc24b1e15bd3d206fa5b3f77f6dd1beb7030
 }
 /* media queries style */
 @media only screen and (max-width: 768px) {
