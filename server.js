@@ -41,6 +41,38 @@ app.get("/api/menu", (req, res) => {
 //     }
 // });
 
+app.put("/api/menu/:id", (req, res) => {
+    let menu = false;
+    for (let i = 0; i < m.length; i++) {
+      if (m[i].id == Number(req.params.id)) {
+        menu = m[i];
+        break;
+      }
+    }
+  
+    if (menu) {
+      if (req.body.image) {
+        menu.image = req.body.image;
+      }
+      if (req.body.menu_name) {
+        menu.menu_name = req.body.menu_name;
+      }
+      if (req.body.description) {
+        menu.description = req.body.description;
+      }
+      if (req.body.price) {
+        menu.price = req.body.price;
+      }
+      console.log(menu);
+      res.send(menu);
+    } else {
+      let err = "Menu not found!";
+      res.status(404);
+      console.log(err);
+      res.send(err);
+    }
+  });
+
 // Main website
 app.get("/index", (req, res) => {
     console.log("Someone accessed the main page");
@@ -50,6 +82,7 @@ app.get("/index", (req, res) => {
         res.end();
     });
 });
+
 
 
 app.listen(3000);
