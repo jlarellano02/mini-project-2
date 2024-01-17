@@ -5,11 +5,11 @@ async function getData(data) {
 
     for (let i = 0; i < menu.length; i++) {
         let row = 
-            "<div class='col-lg-3'><div class='card mt-3'>" + "<img src='" +
+            "<div class='col-lg-3'><div class='card mt-3'>" + "<img src='img/" +
             menu[i].image + 
             "' class='card-img-top'><div class='card-body'>" + 
-            "<h1>" + 
-            menu[i].menu_name + "</h1>" +
+            "<h5>" + 
+            menu[i].menu_name + "</h5>" +
             "<p class='card-title'><i>" +
             menu[i].description + "</i></p>" + 
             "<p class='card-title'><b>Price: </b>" + menu[i].price + "</p>"
