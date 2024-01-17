@@ -67,61 +67,141 @@
 
     <!-- homepage starts here -->
     <section class="home mt-5" id="home">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item" data-bs-interval="5000">
+            <img src="img/hero.jpg" class="d-block w-100 c-img" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active c-item" data-bs-interval="10000">
-                <img src="img/hero.jpg" class="d-block w-100 c-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item c-item" data-bs-interval="2000">
-                <img src="img/menu1.jpg" class="d-block w-100 c-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item c-item" data-bs-interval="2000">
-                <img src="img/menu10.webp" class="d-block w-100 c-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
+          <div class="carousel-item c-item" data-bs-interval="2000">
+            <img src="img/menu1.jpg" class="d-block w-100 c-img" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item c-item" data-bs-interval="2000">
+            <img src="img/menu10.webp" class="d-block w-100 c-img" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
 
     <section>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
-        voluptatibus enim explicabo esse excepturi exercitationem, numquam est
-        maxime quod deleniti temporibus corrupti possimus, aspernatur libero
-        eaque nam totam iusto qui ratione tempore unde? Ducimus neque reiciendis
-        ad accusamus quisquam et doloribus quo enim sapiente vitae corporis,
-        quaerat fugiat libero? Nesciunt enim at maxime velit commodi esse
-        recusandae inventore saepe! Magni, laudantium! Ut nobis recusandae
-        voluptatum, rem magni ipsam pariatur natus quam, commodi doloribus
-        possimus sed culpa delectus debitis esse laudantium vel reiciendis illo
-        ea sint totam fuga! Voluptates quos neque laboriosam eos eveniet quaerat
-        molestiae maiores inventore! Officiis, iusto ducimus.
-      </p>
+      <div class="container">
+        <!-- <h1 class="display-1 text-center">Jeinin's Pet Shop</h1> -->
+        <div class="row" id="card-section"></div>
+      </div>
+
+      <script src="js/menu.js"></script>
     </section>
     <!-- homepage ends here -->
+
+    <!-- Footer -->
+    <section id="contact">
+      <div class="footer">
+        <div class="main">
+          <div class="list">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Tour</a></li>
+            </ul>
+          </div>
+
+          <div class="list">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Tour</a></li>
+            </ul>
+          </div>
+
+          <div class="list">
+            <h4>Contact Info</h4>
+            <ul>
+              <li><a href="#">98 west 21th Street</a></li>
+              <li><a href="#">manila 10016</a></li>
+              <li><a href="#">+1(123)-456-789</a></li>
+              <li><a href="#">info@mydomain.com</a></li>
+              <li><a href="#">+1(123)-456-7890</a></li>
+            </ul>
+          </div>
+
+          <div class="list">
+            <h4>Connect</h4>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="end-text">
+        <p>Copyright ©2023 all right reserved | made by edrian cuasay</p>
+      </div>
+    </section>
   </body>
 </html>
