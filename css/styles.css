@@ -1,32 +1,49 @@
-@import url('https://fonts.cdnfonts.com/css/konigsberg');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.cdnfonts.com/css/konigsberg");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 /* navbar style */
 .navbar-brand {
-    font-family: 'Königsberg', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
+  font-family: "Königsberg", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+#navbar {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 /* logo-icon style */
 .logo-icon {
-    width: 50px;
+  width: 50px;
 }
 
 /* body style */
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.c-item {
+    height: 500px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
 }
 
 /* media queries style */
 @media only screen and (max-width: 768px) {
-    .navbar-brand {
-        display: none;
-    }
+  .navbar-brand {
+    display: none;
+  }
 
-    .logo-icon {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-}                                                
+  .logo-icon {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
