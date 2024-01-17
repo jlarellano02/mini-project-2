@@ -1,6 +1,10 @@
 @import url("https://fonts.cdnfonts.com/css/konigsberg");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
+* {
+  list-style: none;
+}
+
 /* navbar style */
 .navbar-brand {
   font-family: "Königsberg", sans-serif;
@@ -28,20 +32,16 @@
 /* body style */
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 .c-item {
-    height: 500px;
+  height: 500px;
 }
 
 .c-img {
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
-}
-
-/* cards style */
-.card-body {
-    height: 330px;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
 }
 /* media queries style */
 @media only screen and (max-width: 768px) {
