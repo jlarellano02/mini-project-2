@@ -1,12 +1,14 @@
 const ex = require("express");
 const fs = require("fs");
-const mi = require("./menu_items");
+const mi = require("./js/menu_items");
+const ci = require("./js/cart_items");
 const cors = require("cors");
 
 const app = ex();
 app.use(ex.json());
 app.use(cors());
 const m = mi.menu;
+const c = ci.cart;
 
 app.get("/", (req, res) => {
     res.send("Hello world!");
@@ -46,7 +48,12 @@ app.put("/api/menu/:id", (req, res) => {
       console.log(err);
       res.send(err);
     }
-  });
+});
+
+app.get("/api/cart", (req, res) => {
+    res.send(c);
+});
+
 
 // Main website
 app.get("/index", (req, res) => {
