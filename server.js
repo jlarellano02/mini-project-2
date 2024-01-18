@@ -16,31 +16,6 @@ app.get("/api/menu", (req, res) => {
     res.send(m);
 });
 
-// API
-// app.get("/api/books", (req, res) => {
-//     res.send(b);
-// });
-
-// app.get("/api/books/:id", (req, res) => {
-//     let book;
-//     for (let i = 0; i < b.books.length; i++) {
-//         if (b[i].id === Number(req.params.id)) {
-//             book = b[i];
-//             break;
-//         }
-//     }
-
-//     if (book) {
-//         res.send(book);
-//         console.log(book);
-//     } else {
-//         let err = "Book not found";
-//         res.status(404);
-//         res.send(err);
-//         console.log(err);
-//     }
-// });
-
 app.put("/api/menu/:id", (req, res) => {
     let menu = false;
     for (let i = 0; i < m.length; i++) {
