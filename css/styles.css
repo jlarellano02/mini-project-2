@@ -51,6 +51,13 @@ body {
   background-color: rgb(255, 129, 83);
 }
 
+
+/* section */
+
+.sec {
+  border: 1px solid black;
+  padding: 0;
+}
 /* media queries style */
 @media only screen and (max-width: 768px) {
   .navbar-brand {
