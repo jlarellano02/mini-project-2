@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      async function putData(data, pet) {
+        let req = await fetch(data, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(pet),
+        });
+        let res = await req.json();
+        console.log(res);
+        window.location.href = "pet_shop.html";
+      }
+
+      $(document).ready(function () {
+        $("#add_pet").submit(function (x) {
+          let pet_data = {
+            pet_name: $("#name").val(),
+            species: $("#species").val(),
+            eating_habit: $(".form-select").val(),
+          };
+
+          putData("http://localhost:3001/api/pets", pet_data);
+          x.preventDefault();
+        });
+      });
+    </script>
+    <title>Pet Shop</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add New Pet</h1>
+      <form id="add_pet">
+        <label>Name: </label>
+        <input type="text" id="name" class="form-control" />
+        <label>Species: </label>
+        <input type="text" id="species" class="form-control" />
+        <label>Eating Habit: </label>
+        <select class="form-select" name="dropdown">
+          <option disabled selected>Select one</option>
+          <option value="herbivore">Herbivore</option>
+          <option value="carnivore">Carnivore</option>
+          <option value="omnivore">Omnivore</option>
+        </select>
+        <input type="submit" class="btn btn-primary" />
+      </form>
+    </div>
+  </body>
+</html>

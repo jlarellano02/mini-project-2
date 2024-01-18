@@ -13,7 +13,7 @@ async function getData(data) {
             "<p class='card-title'><i>" +
             menu[i].description + "</i></p>" + 
             "<p class='card-title'><b>Price: </b>" + menu[i].price + "</p>"
-            + "<a href='#' class='btn btn-primary'>Add to Cart</a></div></div></div>";
+            + "<a href='cart.html' class='btn btn-primary' id='add_to_cart'>Add to Cart</a></div></div></div>";
 
         $("#card-section").append(row);
     }

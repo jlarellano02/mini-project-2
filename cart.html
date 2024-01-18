@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="img/logo.png" />
-    <script src="https://unpkg.com/swup@4"></script>
-    <script>
-      const swup = new Swup();
-    </script>
-    <title>CATCH ʻN HATCH</title>
-  </head>
-  <body>
-    <!-- navbar starts here -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Cart - CATCH ʻN HATCH</title>
+</head>
+<body>
+    <!-- Navbar (similar to menu.html) -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <img src="img/logo.png" alt="Catch & Hatch Logo" class="logo-icon">
@@ -36,7 +27,7 @@
                         <a href="index.html" class="nav-link navbar-text">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a href="#" class="nav-link navbar-text">About</a>
+                        <a href="about.html" class="nav-link navbar-text">About</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a href="menu.html" class="nav-link navbar-text">Menu</a>
@@ -45,7 +36,7 @@
                         <a href="#contact" class="nav-link navbar-text">Contact Us</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a href="cart.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <i class="fa-solid fa-bag-shopping fa-icon"></i>
                         </a>
                     </li>
@@ -62,35 +53,19 @@
                 </ul>
             </div>
         </div>
-      </div>
     </nav>
-    <!-- navbar ends here -->
+    <!--  -->
 
-    <!-- about starts here -->
-    <div class="container transition-fade" id="swup">
-      <h1>About us</h1>
-      <p>
-        Mixing Louisiana-inspired specialties with world-famous Filipino
-        hospitality, Catch 'N Hatch serves hatched-from-scratch comfort dishes
-        with deliciously catchy flavors-think fresh stir fried seafood and
-        buttermilk fried chicken with your choice of classic or trendy
-        flavors-alongside other tasty creations in a lively and familiar dining
-        atmosphere.
-      </p>
-
-      <h1>Our Vision</h1>
-      <p>
-        Our vision is to become the Philippines' household brand for flavored
-        seafood and fried chicken in the next decade.
-      </p>
-      <h1>Our Mission</h1>
-      <p>
-        Our mission is to use our tried-and-tested restaurant experience to
-        consistently serve enjoyable specialty comfort dishes in a fun and
-        friendly casual dining atmosphere.
-      </p>
+    <!-- cart content starts here -->
+    <div class="container">
+        <div class="row" id="cart-items">
+            <h1 class="text-center">Your Cart</h1>
+            
+        </div>
     </div>
-    <!-- about ends here -->
-    <!-- <script src="js/menu.js"></script> -->
-  </body>
+    <!-- cart content ends here -->
+
+    <!-- Scripts -->
+    <script src="js/cart.js"></script>
+</body>
 </html>
