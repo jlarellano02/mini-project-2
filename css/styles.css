@@ -10,7 +10,7 @@
   font-family: "Königsberg", sans-serif;
   font-weight: bold;
   font-size: 30px;
-  color: rgb(176,15,13);
+  color: rgb(176, 15, 13);
 }
 #navbar {
   display: block;
@@ -18,7 +18,7 @@
   top: 0;
   right: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10000;
 }
 
 /* logo-icon style */
@@ -27,7 +27,7 @@
 }
 
 .fa-icon {
-    color: #74c0fc;
+  color: #74c0fc;
 }
 
 /* body style */
@@ -45,6 +45,14 @@ body {
   filter: brightness(0.6);
 }
 
+/* carousel line */
+#line {
+  height: 55px;
+  background-color: rgb(255, 129, 83);
+}
+
+
+
 /* media queries style */
 @media only screen and (max-width: 768px) {
   .navbar-brand {
@@ -57,5 +65,3 @@ body {
     display: block;
   }
 }
-
-
