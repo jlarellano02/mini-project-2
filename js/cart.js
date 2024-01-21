@@ -8,6 +8,7 @@ async function getCartData(data) {
     for (let i = 0; i < cart.length; i++) {
       row += "<tr><td>" + cart[i].menu_name + "</td><td>" + cart[i].price + "</td><td>" + cart[i].quantity + "</td><td>" + (cart[i].price * cart[i].quantity) + "</td></tr>";
     }
+    
     row += "</table>";
     $("#cart-items").append(row);
   }

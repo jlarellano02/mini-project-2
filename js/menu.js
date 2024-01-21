@@ -24,19 +24,15 @@ async function getData(data) {
             + "<button class='btn btn-primary add_to_cart' id='" + menu[i].id + " '>Add to Cart</button></div></div></div>";
 
         $("#card-section").append(row);
-
-        
-
     }
 
     $(document).ready(function() {
         $(".add_to_cart").click(function() {
-            // console.log("Hello!");
             addToCart("http://localhost:3000/api/cart/add/" + $(this).prop("id"));
             window.location.href = "cart.html";
         });
     });   
-       
+
 }
 
 getData("http://localhost:3000/api/menu/");
