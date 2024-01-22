@@ -66,91 +66,103 @@
     <!-- navbar ends here -->
 
     <!-- homepage starts here -->
-    <section class="home mt-5 transition-fade" id="swup">
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active c-item" data-bs-interval="3000">
-            <img
-              src="img/carousel-1.png"
-              class="d-block w-100 c-img"
-              alt="..."
-            />
-            <div class="carousel-caption text-white d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
+        <section class="mt-5 transition-fade" id="swup">
+          <div id="carouselExampleDark" class="carousel carousel-dark carousel-fade slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
-          </div>
-          <div class="carousel-item c-item" data-bs-interval="2000">
-            <img
-              src="img/carousel-2.png"
-              class="d-block w-100 c-img"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item" data-bs-interval="3000">
+                <img
+                  src="img/carousel-1.png"
+                  class="d-block w-100 c-img"
+                  alt="..."
+                />
+                <div
+                  class="carousel-caption text-white d-none d-md-block hero-text"
+                >
+                  <h1>Your Go-to Spot for Delicious Eats.</h1>
+                  <button class="btn">
+                    <a href="menu.html" class="order-btn">Order now</a>
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item c-item" data-bs-interval="2000">
+                <img
+                  src="img/carousel-2.png"
+                  class="d-block w-100 c-img"
+                  alt="..."
+                />
+                <div
+                  class="carousel-caption text-white d-none d-md-block hero-text"
+                >
+                  <h1>Your Go-to Spot for Delicious Eats.</h1>
+                  <button class="btn">
+                    <a href="menu.html" class="order-btn">Order now</a>
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item c-item" data-bs-interval="2000">
+                <img
+                  src="img/carousel-4.png"
+                  class="d-block w-100 c-img"
+                  alt="..."
+                />
+                <div
+                  class="carousel-caption text-white d-none d-md-block hero-text"
+                >
+                  <h1>Your Go-to Spot for Delicious Eats.</h1>
+                  <button class="btn">
+                    <a href="menu.html" class="order-btn">Order now</a>
+                  </button>
+                </div>
+              </div>
             </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-item c-item" data-bs-interval="2000">
-            <img
-              src="img/carousel-4.png"
-              class="d-block w-100 c-img"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
+        </section>
     <!-- homepage ends here -->
 
     <!--carousel line-->
@@ -199,15 +211,25 @@
           <h1>text here</h1>
         </div>
         <div class="col-lg-6 sec">
-          <img src="img/logo.png" alt="" width="100%" class="object-fill-cover" />
+          <img
+            src="img/logo.png"
+            alt=""
+            width="100%"
+            class="object-fill-cover"
+          />
         </div>
       </div>
     </section>
-    
+
     <section class="container-fluid">
       <div class="row">
         <div class="col-lg-6 sec" width="50%">
-          <img src="img/logo.png" alt="" width="100%" class="object-fill-cover"/>
+          <img
+            src="img/logo.png"
+            alt=""
+            width="100%"
+            class="object-fill-cover"
+          />
         </div>
         <div class="col-lg-6 sec">
           <h1>text here</h1>
@@ -221,30 +243,35 @@
           <h1>text here</h1>
         </div>
         <div class="col-lg-6 sec">
-          <img src="img/logo.png" alt="" width="100%" class="object-fill-cover"/>
+          <img
+            src="img/logo.png"
+            alt=""
+            width="100%"
+            class="object-fill-cover"
+          />
         </div>
       </div>
     </section>
     <!-- section 1 ends here -->
 
     <!-- section 2 stars here -->
-      <div class="container-fluid" >
-        <div class="row">
-          <div class="col-lg-12">
-            <h1 class="text-center">Drop By for a Bite</h1>
-          </div>
-          <div class="col-lg-6 text-center">
-            <h1>Address</h1>
-            <p>500 Terry Francine St.</p>
-            <p>San Francisco, CA 94158</p>
-          </div>
-          <div class="col-lg-6 text-center">
-            <h1>Address</h1>
-            <p>500 Terry Francine St.</p>
-            <p>San Francisco, CA 94158</p>
-          </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center">Drop By for a Bite</h1>
+        </div>
+        <div class="col-lg-6 text-center">
+          <h1>Address</h1>
+          <p>500 Terry Francine St.</p>
+          <p>San Francisco, CA 94158</p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <h1>Address</h1>
+          <p>500 Terry Francine St.</p>
+          <p>San Francisco, CA 94158</p>
         </div>
       </div>
+    </div>
     <!-- section 2 ends here -->
 
     <!-- footer starts here -->
