@@ -33,26 +33,29 @@ let user = {
   password: 'user123'
 };
 
-function validate() {
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
-  
-  if( username == adminUser.username && password == adminUser.password) {
-    alert ("Login successfully");
-    window.location.href="Admin-home.html";
+$(document).ready(function() {
     
-    return false;
-
-  } else if ( username == user.username && password == user.password) {
-    alert ("Login user successfully"); 
-    window.open("user.html", "_self");
+    $("#login-form").submit(function (x) {
+        x.preventDefault();
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      
+      if( username == adminUser.username && password == adminUser.password) {
+        alert ("Login successfully");
+        window.location.href="Admin-home.html";
     
-    return false;
-
-  } else {
-    alert("Wrong username or password");
-  } 
-  }
+      } else if ( username == user.username && password == user.password) {
+        alert ("Login user successfully"); 
+        window.location.href="user.html";
+        console.log(window.location.href);
+    
+      } else {
+        alert("Wrong username or password");
+      } 
+      }
+    
+    )
+});
 
 
  
