@@ -32,7 +32,7 @@ async function getCartData(data) {
       </tr>`;
     }
 
-    table += `</tbody><tfoot><tr><td colspan="3"></td><td>Total:</td><td>${totalCartPrice.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td><td></td></tr></tfoot></table>`;
+    table += `</tbody><tfoot><tr><td colspan="2"></td><td>Total:</td><td>${totalCartPrice.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td><td></td></tr></tfoot></table>`;
     $("#cart-items").html(table);
 
     bindEventHandlers();
