@@ -78,14 +78,11 @@ app.get("/index", (req, res) => {
     res.end();
   });
 });
-<<<<<<< HEAD
-=======
 
 // let port = process.env.PORT || 3000;
 // app.listen(port, () => {
 //   console.log("Server is running on port " + port);
 // });
->>>>>>> eeb397ac3812dc72741f0d3e9f1e934f12315fef
 
 app.listen(3000);
 console.log("Starting server...");
