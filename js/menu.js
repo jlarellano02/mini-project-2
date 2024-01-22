@@ -28,12 +28,12 @@ async function getData(data) {
 
     $(document).ready(function() {
         $(".add_to_cart").click(function() {
-            addToCart("http://localhost:3000/api/cart/add/" + $(this).prop("id"));
+            addToCart("https://mini-project-2-express.onrender.com/api/cart/add" + $(this).prop("id"));
             window.location.href = "cart.html";
         });
     });   
 
 }
 
-getData("http://localhost:3000/api/menu/");
+getData("https://mini-project-2-express.onrender.com/api/menu");
 
