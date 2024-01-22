@@ -192,11 +192,11 @@ body {
 .cart {
   margin-top: 10%;
 }
-#cart-items {
+/* #cart-items {
   border: 1px black;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.79);
   border-radius: 3px;
-}
+} */
 /* footer */
 #contact {
   background: rgb(119, 78, 63);

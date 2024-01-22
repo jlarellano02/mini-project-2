@@ -12,7 +12,7 @@ async function getCartData(data) {
 
   // Function to update the cart table
   function updateCartTable() {
-    let table = "<table class='table'><thead><tr><th>Item</th><th>Price</th><th>Quantity</th><th>Total Price</th><th>Action</th></tr></thead><tbody>";
+    let table = "<table class='table table-responsive table-bordered border-dark table-hover text-center '><thead><tr><th>Item</th><th>Price</th><th>Quantity</th><th>Total Price</th><th>Action</th></tr></thead><tbody>";
     let totalCartPrice = 0;
 
     for (let i = 0; i < cart.length; i++) {
@@ -22,7 +22,7 @@ async function getCartData(data) {
       table += `<tr>
         <td>${cart[i].menu_name}</td>
         <td>${cart[i].price.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td>
-        <td class="d-flex flex-row align-items-center pt-1 ">
+        <td class=" pt-1 ">
           <button class="btn m-0 px-2 decrease_quantity" data-id="${cart[i].id}">-</button>
           <span class="quantity">${cart[i].quantity}</span>
           <button class="btn m-0 px-2 increase_quantity" data-id="${cart[i].id}">+</button>
@@ -32,7 +32,7 @@ async function getCartData(data) {
       </tr>`;
     }
 
-    table += `</tbody><tfoot><tr><td colspan="3"></td><td>Total:</td><td>${totalCartPrice.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td><td></td></tr></tfoot></table>`;
+    table += `</tbody><tfoot><tr><td colspan="3"></td><td>Total:</td><td>${totalCartPrice.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td></tr></tfoot></table>`;
     $("#cart-items").html(table);
 
     bindEventHandlers();
