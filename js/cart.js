@@ -22,7 +22,7 @@ async function getCartData(data) {
       table += `<tr>
         <td>${cart[i].menu_name}</td>
         <td>${cart[i].price.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td>
-        <td class="d-flex flex-row align-items-center">
+        <td class="d-flex flex-row align-items-center pt-1 ">
           <button class="btn m-0 px-2 decrease_quantity" data-id="${cart[i].id}">-</button>
           <span class="quantity">${cart[i].quantity}</span>
           <button class="btn m-0 px-2 increase_quantity" data-id="${cart[i].id}">+</button>
