@@ -13,4 +13,4 @@ async function getCartData(data) {
     $("#cart-items").append(row);
   }
 
-getCartData("https://mini-project-2-express.onrender.com/api/cart");
+getCartData("http://localhost:3000/api/cart/");
