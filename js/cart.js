@@ -28,15 +28,12 @@ async function getCartData(data) {
           <button class="btn m-0 px-2 increase_quantity" data-id="${cart[i].id}">+</button>
         </td>
         <td>${totalPrice.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td>
-        <td><button class="btn btn-danger remove_item m-0 p-1 fs-6" data-id="${cart[i].id}">Remove</button></td>
+        <td><button class="btn btn-danger remove_item m-0 p-1 px-3 fs-6" data-id="${cart[i].id}">Remove</button></td>
+        
       </tr>`;
     }
 
-<<<<<<< HEAD
-    table += `</tbody><tfoot><tr><td colspan="3"></td><td>Total:</td><td>${totalCartPrice.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td></tr></tfoot></table>`;
-=======
-    table += `</tbody><tfoot><tr><td colspan="2"></td><td>Total:</td><td>${totalCartPrice.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td><td></td></tr></tfoot></table>`;
->>>>>>> b7d258d938684498fe4d65acdf3c7a43866238c3
+    table += `</tbody><tfoot><tr><td colspan="2"></td><td>Total:</td><td>${totalCartPrice.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td><td><button class="btn btn-primary  m-0 p-1 fs-6" >Check Out</button></td></tr></tfoot></table>`;
     $("#cart-items").html(table);
 
     bindEventHandlers();
