@@ -135,9 +135,8 @@ body {
 }
 
 .sec1-text-link:hover {
-  color:rgb(67, 66, 66) ;
+  color: rgb(67, 66, 66);
 }
-
 
 /* section 2 */
 .bite {
@@ -163,11 +162,12 @@ body {
 }
 
 .footer {
-  padding: 20px 0;
+  padding: 20px 20px;
+  padding-top: 5%;
 }
 
 .list {
-  width: 25%;
+  width: 33.3%;
 }
 
 .list h4 {
