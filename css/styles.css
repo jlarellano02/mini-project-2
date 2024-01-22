@@ -118,13 +118,25 @@ body {
 .sec {
   padding: 0;
 }
-
 .sec-text {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.sec1-btn {
+  padding: 10px;
+  border: 1px solid rgb(67, 66, 66);
+}
+.sec1-text {
+  text-decoration: none;
+  color: rgb(67, 66, 66);
+}
+
+/* section 2 */
+.bite {
+  background: rgb(241, 158, 158);
 }
 
 /* menu */
