@@ -5,6 +5,7 @@ async function addToCart(data){
     let my_text = await my_obj.text();
     let menu = JSON.parse(my_text);
 }
+
 async function getData(data) {
   let my_obj = await fetch(data);
   let my_text = await my_obj.text();
