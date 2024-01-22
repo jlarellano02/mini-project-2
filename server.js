@@ -10,6 +10,7 @@ app.use(cors());
 const m = mi.menu;
 const c = ci.cart;
 
+
 app.get("/", (req, res) => {
     res.send("Hello world!");
 });
@@ -54,6 +55,22 @@ app.get("/api/cart", (req, res) => {
     res.send(c);
 });
 
+app.get("/api/cart/add/:id", (req, res) => {
+    let menu_item = false;
+        for (let i = 0; i < m.length; i++) {
+            if (m[i].id == Number(req.params.id)) {
+                
+            menu_item = m[i];
+            break;
+    }
+    
+  }
+  c.push(menu_item);
+    res.send(menu_item);
+    if (menu_item) {
+        console.log(menu_item);
+    }
+});
 
 // Main website
 app.get("/index", (req, res) => {
@@ -64,8 +81,6 @@ app.get("/index", (req, res) => {
         res.end();
     });
 });
-
-
 
 app.listen(3000);
 console.log("Starting server...");
