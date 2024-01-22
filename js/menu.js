@@ -19,7 +19,7 @@ async function getData(data) {
             "<h5 class='fw-bold'>" + 
             menu[i].menu_name + "</h5>" +
             "<p class='card-title'></p>" + 
-            "<p class='card-title'><b>Price: </b>" + menu[i].price + "</p>"
+            "<p class='card-title'><b>Price: ₱</b>" + menu[i].price + "</p>"
             + "<button class='btn btn-primary add_to_cart mb-1 position-absolute bottom-0 start-1' id='" + menu[i].id + " '>Add to Cart</button></div></div></div>";
 
         $("#card-section").append(row);

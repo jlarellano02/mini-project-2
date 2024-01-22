@@ -142,9 +142,16 @@ body {
 
 /* section 2 */
 .bite {
-  background: rgb(241, 158, 158);
+  background: rgb(254, 164, 164);
 }
-
+.bite h1 {
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.bite p {
+  font-size: 18px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+}
 /* section 3 */
 .sec3-img img {
   filter: brightness(80%);
@@ -163,15 +170,26 @@ body {
   /* display: grid;
   gap: 5.5rem; */
   transition: 0.5s;
+  filter: brightness(90%);
 }
 .card-img-top:hover {
-  filter: brightness(100%) hue-rotate(20deg);
+  filter: brightness(100%) hue-rotate(15deg);
   transform: scale(1.03);
+}
+#menu{
+  background: rgb(255, 129, 83);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.our-menu {
+  background: rgb(245, 158, 126);
+}
+.card {
+  background:rgb(230, 230, 230) ;
 }
 
 /* footer */
 #contact {
-  background: orangered;
+  background: rgb(119, 78, 63);
 }
 
 .main {
@@ -237,7 +255,9 @@ body {
 .end-text p {
   color: #fff;
   font-size: 14px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 /* media queries style */
