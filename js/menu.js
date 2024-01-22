@@ -17,10 +17,10 @@ async function getData(data) {
             menu[i].image + 
             "' class='card-img-top'><div class='card-body'>" + 
             "<h5 class='fw-bold'>" + 
-            menu[i].menu_name + "</h5>" +
+            menu[i].menu_name + "</h5>" + "<hr/>" +
             "<p class='card-title'></p>" + 
-            "<p class='card-title'><b>Price: ₱</b>" + menu[i].price + "</p>"
-            + "<button class='btn btn-primary add_to_cart mb-1 position-absolute bottom-0 start-1' id='" + menu[i].id + " '>Add to Cart</button></div></div></div>";
+            "<p class='card-title position-absolute bottom-0 end-0 me-5'><b>Price: ₱</b>" + menu[i].price + "</p>" 
+            + "<button class='btn btn-primary add_to_cart mb-1 ms-3 position-absolute bottom-0 start-0' id='" + menu[i].id + " '>Add to Cart</button></div></div></div>";
 
         $("#card-section").append(row);
     }
