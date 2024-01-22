@@ -187,6 +187,16 @@ body {
   background:rgb(230, 230, 230) ;
 }
 
+
+/* cart */
+.cart {
+  margin-top: 10%;
+}
+#cart-items {
+  border: 1px black;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.79);
+  border-radius: 3px;
+}
 /* footer */
 #contact {
   background: rgb(119, 78, 63);

@@ -23,13 +23,13 @@ async function getCartData(data) {
       table += `<tr>
         <td>${cart[i].menu_name}</td>
         <td>${cart[i].price.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td>
-        <td>
-          <button class="btn btn-primary decrease_quantity" data-id="${cart[i].id}">-</button>
+        <td class="d-flex flex-row align-items-center">
+          <button class="btn m-0 px-2 decrease_quantity" data-id="${cart[i].id}">-</button>
           <span class="quantity">${cart[i].quantity}</span>
-          <button class="btn btn-primary increase_quantity" data-id="${cart[i].id}">+</button>
+          <button class="btn m-0 px-2 increase_quantity" data-id="${cart[i].id}">+</button>
         </td>
         <td>${totalPrice.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td>
-        <td><button class="btn btn-danger remove_item" data-id="${cart[i].id}">Remove</button></td>
+        <td><button class="btn btn-danger remove_item m-0 p-1 fs-6" data-id="${cart[i].id}">Remove</button></td>
       </tr>`;
     }
 
