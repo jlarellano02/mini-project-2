@@ -70,16 +70,14 @@ app.get("/api/cart/add/:id", (req, res) => {
 });
 
 // Main website
-// app.get("/index", (req, res) => {
-//   console.log("Someone accessed the main page");
-//   fs.readFile("index.html", function (err, data) {
-//     res.writeHead(200, { "Content-Type": "text/html" });
-//     res.write(data);
-//     res.end();
-//   });
-// });
-
-let port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log("Server is running on port " + port);
+app.get("/index", (req, res) => {
+  console.log("Someone accessed the main page");
+  fs.readFile("index.html", function (err, data) {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.write(data);
+    res.end();
+  });
 });
+
+app.listen(3000);
+console.log("Starting server...");
