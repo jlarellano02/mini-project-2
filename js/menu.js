@@ -13,15 +13,14 @@ async function getData(data) {
    
     for (let i = 0; i < menu.length; i++) {
         let row = 
-            "<div class='col-lg-3'><div class='card mt-3'>" + "<img src='img/" +
+            "<div class='col-md-3 mb-5' id='card_min'><div class='card mt-3 h-100'>" + "<img src='img/" +
             menu[i].image + 
             "' class='card-img-top'><div class='card-body'>" + 
-            "<h5>" + 
+            "<h5 class='fw-bold'>" + 
             menu[i].menu_name + "</h5>" +
-            "<p class='card-title'><i>" +
-            menu[i].description + "</i></p>" + 
+            "<p class='card-title'></p>" + 
             "<p class='card-title'><b>Price: </b>" + menu[i].price + "</p>"
-            + "<button class='btn btn-primary add_to_cart' id='" + menu[i].id + " '>Add to Cart</button></div></div></div>";
+            + "<button class='btn btn-primary add_to_cart mb-1 position-absolute bottom-0 start-1' id='" + menu[i].id + " '>Add to Cart</button></div></div></div>";
 
         $("#card-section").append(row);
     }
