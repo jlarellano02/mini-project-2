@@ -81,11 +81,13 @@ body {
 
 .hero-text {
   position: absolute;
-  top: 40%;
+  top: 50%;
 }
 .hero-text h1 {
   font-size: 50px;
+  font-weight: 800;
   text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.6);
+  letter-spacing: 4px;
 }
 .btn {
   border: 1px solid white;
@@ -113,7 +115,7 @@ body {
   background-color: rgb(255, 129, 83);
 }
 
-/* section */
+/* section 1 */
 
 .sec {
   padding: 0;
@@ -145,10 +147,15 @@ body {
 
 /* menu */
 .card-img-top {
-  object-fit: cover;
-  height: 200px;
-  display: grid;
-  gap: 1.5rem;
+  /* object-fit: cover; */
+  /* height: 200px; */
+  /* display: grid;
+  gap: 5.5rem; */
+  transition: 0.5s;
+}
+.card-img-top:hover {
+  filter: brightness(100%) hue-rotate(45deg);
+  transform: scale(1.03);
 }
 
 /* footer */
@@ -228,4 +235,12 @@ body {
     width: auto;
     object-fit: fill;
   }
+  .sec3-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
 }
