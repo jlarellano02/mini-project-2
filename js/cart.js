@@ -8,7 +8,6 @@ async function getCartData(data) {
     localStorage.setItem('cart', JSON.stringify(cart));
   }
 
-  // Fetch cart data initially
   await fetchCartData();
 
   // Function to update the cart table
@@ -36,11 +35,9 @@ async function getCartData(data) {
     table += `</tbody><tfoot><tr><td colspan="3"></td><td>Total:</td><td>${totalCartPrice.toLocaleString('en-PH', { style: 'currency', currency: 'PHP' })}</td><td></td></tr></tfoot></table>`;
     $("#cart-items").html(table);
 
-    // Rebind event handlers after updating the table
     bindEventHandlers();
   }
 
-  // Function to bind event handlers
   function bindEventHandlers() {
     $(".increase_quantity").click(function () {
       let itemId = $(this).data("id");
