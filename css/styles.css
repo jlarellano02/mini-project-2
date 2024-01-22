@@ -154,7 +154,7 @@ body {
   transition: 0.5s;
 }
 .card-img-top:hover {
-  filter: brightness(100%) hue-rotate(45deg);
+  filter: brightness(100%) hue-rotate(20deg);
   transform: scale(1.03);
 }
 
