@@ -14,7 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="img/logo.png" />
+   
     <title>CATCH ʻN HATCH</title>
   </head>
   <body>
@@ -49,14 +49,14 @@
                 <i class="fa-solid fa-bag-shopping fa-icon"></i>
               </a>
             </li>
-            <!-- <li class="nav-item mx-2">
+            <li class="nav-item mx-2">
               <a href="#" class="nav-link">
                 <i class="fa-solid fa-heart fa-icon"></i>
               </a>
-            </li> -->
+            </li>
             <li class="nav-item mx-2">
               <a href="login.html" class="nav-link">
-                <i class="fa-solid fa-user fa-icon"></i>
+                <i class="fa-solid fa-user fa-icon btnLogin-popup"></i>
               </a>
             </li>
           </ul>
@@ -65,44 +65,49 @@
     </nav>
     <!-- navbar ends here -->
 
-    <!-- contact starts here -->
-    <section class="contact">
-        <div class="content">
-            <h2>Contact Us</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis ratione ipsa sequi iusto voluptate, adipisci consectetur aperiam odio, nihil consequatur vel magnam, excepturi rerum facere dolore ex a placeat laborum?</p>
-        </div>
-        <div class="container">
-            <div class="contactInfo">
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-location-dot" style="color: #f22f21;"></i></div>
-                    <div class="text">
-                        <h3>Address</h3>
-                        <p>The Block, Food Circuit Ground Level, SM North Edsa , Quezon City, Philippines</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-phone" style="color: #f22f21;"></i></div>
-                    <div class="text">
-                        <h3>Contact Number</h3>
-                        <p>0999 909 6672</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-envelope" style="color: #f22f21;"></i></div>
-                    <div class="text">
-                        <h3>Email Address</h3>
-                        <p>catchnhatch@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- login starts here -->
 
-    <!-- contact ends here -->
+    
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <form action="#">
+                <h2>Registration</h2>
+                <div class="input-box">
+                  <span class="icon"><ion-icon name="person"></ion-icon></span>
+                  <input type="text" required><br/>
+                  <label>Username</label>
+                </div>
+                <div>
+                  <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required><br/>
+                    <label>Email</label>
+                  </div>
+                  <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required><br/>
+                    <label>Password</label>
+                  </div>
+                </div>
+                
+                <div class="remember">
+                  <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn-login-register"><a class ="register-new" href=/registration.html>Register</a></button>
+                <div class="login-register">
+                  <p>Already have an account? <a href="login.html" class="login-link">Sign-In</a></p>
+                </div>
+              </form>
+        </div>
+      </div>
+  
+
+
+    <!-- login ends here -->
 
     <!-- scripts starts here -->
-
-    <script src="js/menu.js"></script>
+    <script src="js/login.js"> </script>
 
     <!-- scripts ends here -->
   </body>
