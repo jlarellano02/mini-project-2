@@ -145,6 +145,17 @@ body {
   background: rgb(241, 158, 158);
 }
 
+/* section 3 */
+.sec3-img img {
+  filter: brightness(80%);
+}
+
+.sec3-img img:hover{
+  filter: brightness(100%) hue-rotate(10deg);
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+
 /* menu */
 .card-img-top {
   /* object-fit: cover; */
@@ -231,16 +242,6 @@ body {
 
 /* media queries style */
 @media only screen and (max-width: 768px) {
-  .row {
-    width: auto;
-    object-fit: fill;
-  }
-  .sec3-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
+ 
 
 }
