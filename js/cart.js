@@ -1,7 +1,15 @@
 async function getCartData(data) {
-  let my_obj = await fetch(data);
-  let my_text = await my_obj.text();
-  let cart = JSON.parse(my_text);
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  async function fetchCartData() {
+    let my_obj = await fetch(data);
+    let my_text = await my_obj.text();
+    cart = JSON.parse(my_text);
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+
+  // Fetch cart data initially
+  await fetchCartData();
 
   // Function to update the cart table
   function updateCartTable() {
@@ -38,6 +46,7 @@ async function getCartData(data) {
       let itemId = $(this).data("id");
       let item = cart.find(item => item.id === itemId);
       item.quantity++;
+      localStorage.setItem('cart', JSON.stringify(cart));
       updateCartTable();
     });
 
@@ -45,6 +54,7 @@ async function getCartData(data) {
       let itemId = $(this).data("id");
       let item = cart.find(item => item.id === itemId);
       item.quantity = Math.max(1, item.quantity - 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
       updateCartTable();
     });
 
@@ -52,6 +62,7 @@ async function getCartData(data) {
       let itemId = $(this).data("id");
       if (confirm("Are you sure you want to remove this item from the cart?")) {
         cart = cart.filter(item => item.id !== itemId);
+        localStorage.setItem('cart', JSON.stringify(cart));
         updateCartTable();
       }
     });
