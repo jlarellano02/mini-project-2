@@ -28,7 +28,7 @@ async function getData(data) {
 
     $(document).ready(function() {
         $(".add_to_cart").click(function() {
-            addToCart("https://mini-project-2-express.onrender.com/api/cart/add/" + $(this).prop("id"));
+            addToCart("http://localhost:3000/api/cart/add/" + $(this).prop("id"));
             window.location.href = "cart.html";
         });
     });   
