@@ -70,4 +70,4 @@ async function getCartData(data) {
   updateCartTable();
 }
 
-getCartData("http://localhost:3000/api/cart/");
+getCartData("https://mini-project-2-express.onrender.com/api/cart");
